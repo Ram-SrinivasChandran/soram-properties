@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const formSuccess  = document.getElementById('formSuccess');
 
   /* Sign up free at formspree.io, create a form, and paste your endpoint here */
-  const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xojzgrke';
+  const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xykqydvo';
 
   if (contactForm) {
     contactForm.addEventListener('submit', e => {
