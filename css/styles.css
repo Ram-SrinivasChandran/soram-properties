@@ -1,14 +1,14 @@
 /* ============================================================
    SWARNAM PROPERTIES — Main Stylesheet
-   Theme: White & Royal Blue (Professional)
+   Theme: White & Grey (Professional)
    ============================================================ */
 
 /* ===== CSS VARIABLES ===== */
 :root {
-  --primary:        #1E3A8A;
-  --primary-light:  #2D55B4;
-  --primary-dark:   #152A6B;
-  --secondary:      #3B82F6;
+  --primary:        #18181B;
+  --primary-light:  #27272A;
+  --primary-dark:   #09090B;
+  --secondary:      #3F3F46;
   --accent:         #F59E0B;
   --white:          #FFFFFF;
   --dark:           #111827;
@@ -159,28 +159,20 @@ section { padding: 90px 0; }
   align-items: center;
   gap: 10px;
 }
-.logo-icon {
-  width: 34px; height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-.logo-icon img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+.logo-img {
+  height: 78px;
+  width: auto;
   display: block;
 }
 .logo-text { display: flex; flex-direction: column; line-height: 1.1; }
 .brand-name {
   font-family: var(--font-heading);
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 700;
   color: var(--white);
 }
 .brand-sub {
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 2.5px;
   text-transform: uppercase;
   color: rgba(255,255,255,0.75);
@@ -261,6 +253,16 @@ section { padding: 90px 0; }
 .hero-overlay {
   position: absolute; inset: 0;
   background: rgba(0,0,0,0.15);
+  pointer-events: none;
+}
+.hero::after {
+  content: '';
+  position: absolute; inset: 0;
+  background-image: url("../assets/logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: min(620px, 65%) auto;
+  opacity: 0.12;
   pointer-events: none;
 }
 .hero-content {
@@ -860,27 +862,19 @@ section { padding: 90px 0; }
 .footer-logo {
   margin-bottom: 18px;
 }
-.logo-icon-white {
-  width: 34px; height: 50px;
-  display: flex; align-items: center; justify-content: center;
-  flex-shrink: 0;
-}
-.logo-icon-white img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  display: block;
+.footer-logo .logo-img {
+  height: 88px;
 }
 .brand-name-white {
   font-family: var(--font-heading);
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 700;
   color: var(--white);
   display: block;
   line-height: 1.1;
 }
 .brand-sub-white {
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 2.5px;
   text-transform: uppercase;
   color: rgba(255,255,255,0.6);
