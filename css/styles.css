@@ -184,6 +184,7 @@ section { padding: 90px 0; }
   gap: 32px;
   margin-left: auto;
 }
+.nav-links-cta { display: none; }
 .nav-links a {
   color: rgba(255,255,255,0.9);
   font-weight: 500;
@@ -997,6 +998,20 @@ section { padding: 90px 0; }
   .section-title { font-size: 28px; }
 
   /* Navbar */
+  .navbar .container { gap: 8px; }
+  .nav-brand { flex: 1; min-width: 0; }
+  .logo { min-width: 0; }
+  .logo-img { height: 44px; }
+  .logo-text { min-width: 0; overflow: hidden; }
+  .brand-name { font-size: 17px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .brand-sub {
+    font-size: 9px;
+    letter-spacing: 1.2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .nav-cta { display: none; }
   .nav-links {
     display: none;
     flex-direction: column;
@@ -1017,9 +1032,10 @@ section { padding: 90px 0; }
     font-size: 16px;
   }
   .nav-links a::after { display: none; }
-  .hamburger { display: flex; }
-  .nav-cta .btn-outline-nav { display: none; }
-  .nav-cta .btn-primary { padding: 10px 16px; font-size: 13px; }
+  .nav-links-cta { display: block; padding: 16px 28px; border-bottom: none; }
+  .nav-links-cta .btn { width: 100%; justify-content: center; }
+  .nav-links-cta .btn-primary { color: var(--white) !important; }
+  .hamburger { display: flex; flex-shrink: 0; }
 
   /* Hero */
   .hero-content h1 { font-size: 36px; }
@@ -1056,6 +1072,10 @@ section { padding: 90px 0; }
   /* Footer */
   .footer-grid { grid-template-columns: 1fr; gap: 30px; }
   .footer-bottom { flex-direction: column; gap: 8px; text-align: center; }
+  .footer-logo .logo-img { height: 56px; }
+
+  /* Hero watermark */
+  .hero::after { background-size: min(380px, 80%) auto; }
 
   /* Stats */
   .stats-grid { grid-template-columns: 1fr 1fr; }
@@ -1067,4 +1087,9 @@ section { padding: 90px 0; }
   .why-grid { grid-template-columns: 1fr; }
   .stats-grid { grid-template-columns: 1fr 1fr; gap: 16px; }
   .stat-number { font-size: 40px; }
+
+  /* Navbar */
+  .logo-img { height: 38px; }
+  .brand-name { font-size: 15px; }
+  .brand-sub { font-size: 8px; letter-spacing: 0.8px; }
 }
